@@ -54,7 +54,7 @@ public class ReverseLinkedListInKSize {
         return prev;
     }
 
-    static class Node {
+   private static class Node {
         int data;
         Node next;
 
