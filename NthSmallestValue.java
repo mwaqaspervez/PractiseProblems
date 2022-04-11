@@ -32,8 +32,8 @@ public class NthSmallestValue {
 
     public static void main(String[] args) {
 
-        int[][] array = new int[][]{{1, 3}, {2, 4, 6}, {0, 9, 10, 11}};
-        int k = 8;
+        int[][] array = new int[][]{{1, 3, 5}, {2, 4, 6}, {0, 9, 10, 11}};
+        int k = 6;
         System.out.println(getNthSmallest(array, k));
     }
 
@@ -42,7 +42,7 @@ public class NthSmallestValue {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 int top = queue.size() == 0 ? Integer.MIN_VALUE : queue.peek();
-                if (array[i][j] < top && queue.size() > k) {
+                if (top > array[i][j] && queue.size() >= k) {
                     queue.poll();
                     queue.add(array[i][j]);
                 }

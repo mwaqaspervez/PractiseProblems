@@ -2,6 +2,10 @@ package com.demo.assessment.Problems;
 
 /**
  * Given two numbers a and b, find out the sum of their carries when they are added.
+ * Example
+ * a = 2999
+ * b = 1999
+ * answer would be 3 -> e.g 9 + 9 = 1 (carry), 9 + 9 + 1 = 1 (carry), 9 + 9 + 1 = 1(CARRY)
  */
 public class SumOfCarry {
 

@@ -3,9 +3,11 @@ package com.demo.assessment.Problems;
 /**
  * Connect Nodes at Same Level
  * Medium Accuracy: 45.67% Submissions: 73582 Points: 4
- * Given a binary tree, connect the nodes that are at same level. You'll be given an addition nextRight pointer for the same.
+ * Given a binary tree, connect the nodes that are at same level.
+ * You'll be given an addition nextRight pointer for the same.
  * <p>
- * Initially, all the nextRight pointers point to garbage values. Your function should set these pointers to point next right for each node.
+ * Initially, all the nextRight pointers point to garbage values.
+ * Your function should set these pointers to point next right for each node.
  * 10                       10 ------> NULL
  * / \                       /      \
  * 3   5       =>     3 ------> 5 --------> NULL
@@ -95,7 +97,7 @@ public class ConnectNodesAtSameLevel {
         return null;
     }
 
-    private static class Node {
+     static class Node {
         int data;
         Node left, right, nextRight;
 
