@@ -1,30 +1,31 @@
 package com.demo.assessment.Problems;
 
 /**
- * Given two binary trees with head reference as T and S having at most N nodes. The task is to check if S is present as subtree in T.
+ * Given two binary trees with head reference as T and S having at most N nodes.
+ * The task is to check if S is present as subtree in T.
  * A subtree of a tree T1 is a tree T2 consisting of a node in T1 and all of its descendants in T1.
- *
+ * <p>
  * Example 1:
- *
+ * <p>
  * Input:
  * T:      1          S:   3
- *       /   \            /
- *      2     3          4
- *    /  \    /
- *   N    N  4
+ * /   \            /
+ * 2     3          4
+ * /  \    /
+ * N    N  4
  * Output: 1
  * Explanation: S is present in T
- *
+ * <p>
  * Example 2:
- *
+ * <p>
  * Input:
  * T:      26         S:   26
- *        /   \           /  \
- *      10     N        10    N
- *    /    \           /  \
- *    20    30        20  30
- *   /  \            /  \
- *  40   60         40  60
+ * /   \           /  \
+ * 10     N        10    N
+ * /    \           /  \
+ * 20    30        20  30
+ * /  \            /  \
+ * 40   60         40  60
  * Output: 1
  * Explanation:
  * S and T are both same. Hence,
@@ -45,7 +46,7 @@ public class SubtreeProblem {
         root.left.left = new Node(40);
         root.left.right = new Node(60);*/
 
-        System.out.println(isSubtree(tree, subtree ));
+        System.out.println(isSubtree(tree, subtree));
     }
 
     private static boolean isSubtree(Node tree, Node subtree) {
@@ -75,7 +76,7 @@ public class SubtreeProblem {
         return false;
     }
 
-    private static class Node {
+    static class Node {
         int data;
         Node left, right;
 

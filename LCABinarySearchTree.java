@@ -25,7 +25,7 @@ package com.demo.assessment.Problems;
  * which is a ancestor of both the nodes.
  */
 public class LCABinarySearchTree {
-    static class Node {
+    public static class Node {
         int data;
         Node left, right;
 

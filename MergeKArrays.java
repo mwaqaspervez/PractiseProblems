@@ -64,7 +64,7 @@ public class MergeKArrays {
         return result;
     }
 
-    private static class Pair {
+    static class Pair {
         int value;
         int x, y;
 

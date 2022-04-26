@@ -122,7 +122,7 @@ public class MinDistanceFromCorner {
         return true;
     }
 
-    public static class Pair {
+    static class Pair {
         int first, second;
 
         public Pair(int first, int second) {

@@ -58,7 +58,7 @@ public class LCABinaryTree {
         return left == null ? right : left;
     }
 
-    static class Node {
+    public static class Node {
         int data;
         Node left, right;
 

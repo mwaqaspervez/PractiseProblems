@@ -54,7 +54,8 @@ public class LeafAtSameLevel {
         }
         return Math.max(left, right) + 1;
     }
-    static class Node {
+
+    public static class Node {
         int data;
         Node left, right;
 

@@ -60,7 +60,7 @@ public class ReverseLinkedList {
         return prev;
     }
 
-    private static class Node {
+    static class Node {
         int data;
         Node next;
 

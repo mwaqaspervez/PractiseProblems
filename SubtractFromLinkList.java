@@ -68,7 +68,7 @@ public class SubtractFromLinkList {
         System.out.println();
     }
 
-    static class Node {
+    public static class Node {
         public int data;
         public Node next;
 

@@ -3,7 +3,8 @@ package com.demo.assessment.Problems;
 /**
  * Triplet Sum in Array
  * Medium Accuracy: 49.0% Submissions: 95638 Points: 4
- * Given an array arr of size n and an integer X. Find if there's a triplet in the array which sums up to the given integer X.
+ * Given an array arr of size n and an integer X. Find if there's a triplet in the
+ * array which sums up to the given integer X.
  * <p>
  * <p>
  * Example 1:
