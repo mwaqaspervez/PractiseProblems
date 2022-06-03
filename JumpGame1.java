@@ -20,7 +20,7 @@ public class JumpGame1 {
      * Explanation: You will always arrive at index 3 no matter what. Its maximum jump length is 0, which makes it impossible to reach the last index.
      **/
     public static void main(String[] args) {
-        int[] nums = new int[]{2, 3, 1, 1, 4};
+        int[] nums = new int[]{3,2, 1, 0, 4};
         System.out.println(canJump(nums));
     }
 

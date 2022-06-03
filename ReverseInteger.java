@@ -36,4 +36,27 @@ package com.demo.assessment.Problems;
  * -231 <= x <= 231 - 1
  */
 public class ReverseInteger {
+
+    public static void main (String [] args) {
+
+        int number = 1534236469;
+
+        System.out.println(reverse(number));
+    }
+
+    private static int reverse(int number) {
+        int result = 0;
+        while(number != 0) {
+            int remainder = number % 10;
+            long newResult = (long) result * 10 + remainder;
+            if(newResult > Integer.MAX_VALUE || newResult < Integer.MIN_VALUE) {
+                result = 0;
+                break;
+            } else {
+                result = (int) newResult;
+            }
+            number /= 10;
+        }
+        return result;
+    }
 }
